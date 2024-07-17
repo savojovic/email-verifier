@@ -33,25 +33,25 @@ This script verifies the validity of email addresses and checks if they belong t
 
 - Verify an email address:
   ```bash
-  python verifyer.py john.doe@example.com
+  python verify.py john.doe@example.com
   ```
   This command checks if `john.doe@example.com` is a valid email address, verifies the mail server, and checks if the domain is in the blacklist.
 
 - Update the blacklist file:
   ```bash
-  python verifyer.py --update
+  python verify.py --update
   ```
   This command downloads the latest blacklist file from the remote URL and updates the local file.
 
 - Create a new blacklist file:
   ```bash
-  python verifyer.py --create
+  python verify.py --create
   ```
   This command downloads the blacklist file if it doesn't already exist locally.
 
 - Verify an email address and update the blacklist file:
   ```bash
-  python verifyer.py john.doe@example.com --update
+  python verify.py john.doe@example.com --update
   ```
   This command updates the blacklist file and then verifies the email address `john.doe@example.com`.
 
